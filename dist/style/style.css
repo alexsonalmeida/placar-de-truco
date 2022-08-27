@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 0rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0rem;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+section {
+    background-color: #4cf07d;
+}
+
+input {
+    border-radius: 0.25rem;
+    border: #ff0000 0.15rem solid;
+    font-size: 1.2rem;
+}
+
+button {
+    margin-top: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.35rem;
+    background-color: #ff0000;
+    border: none;
+    display: block;
+    box-shadow: black 1px 1px 2px;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin: 1rem 0rem;
+}
+
+.mainArea {
+    padding: 1rem;
+    border-radius: 0.4rem;
+    display: grid;
+    box-shadow: #000000 3px 3px 8px;
+}
+
+.form {
+    font-size: 1.35rem;
+}
