@@ -3,6 +3,8 @@
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     margin: 0rem;
+    display: grid;
+    justify-content: center;
 }
 
 h1 {
@@ -12,27 +14,61 @@ h1 {
 
 button {
     display: block;
-    font-size: 1.5rem;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
+    font-size: 1rem;
+    border: none;
+    background-color: #ADF5FF;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
 }
 
 .conteiner {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    height: 100vh;
+    width: max-content;
 }
 
 .equipe1, .equipe2 {
     display: grid;
     justify-content: center;
     justify-items: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
+}
+
+.conteinerEqp1 {
+    padding: 2rem 4rem;
+    background-color: #0075A2;
+}
+
+.conteinerEqp2 {
+    padding: 2rem 4rem;
+    background-color: #F3A712;
+}
+
+.pontos1, .pontos2 {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .botoes1, .botoes2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    justify-items: center;
     gap: 1rem;
+}
+
+.scores {
+    grid-row: 2;
+}
+
+.menos, .mais {
+    grid-column: 1 / -1;
+}
+
+.mais {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
 }
