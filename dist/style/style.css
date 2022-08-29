@@ -17,12 +17,12 @@ label {
 }
 
 section {
-    background-color: #4cf07d;
+    background-color: #3DD6D0;
 }
 
 input {
     border-radius: 0.25rem;
-    border: #ff0000 0.15rem solid;
+    border: #28190E 0.15rem solid;
     font-size: 1.2rem;
 }
 
@@ -32,10 +32,16 @@ button {
     font-size: 1rem;
     padding: 0.6rem 1rem;
     border-radius: 0.35rem;
-    background-color: #ff0000;
+    background-color: #71F79F;
     border: none;
     display: block;
     box-shadow: black 1px 1px 2px;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #66e091;
 }
 
 .conteiner {
@@ -54,4 +60,5 @@ button {
 
 .form {
     font-size: 1.35rem;
+    display: grid;
 }

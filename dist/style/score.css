@@ -22,6 +22,7 @@ button {
     border-radius: 50%;
     padding: 0.5rem 1rem;
     font-weight: 700;
+    box-shadow: #000000 2px 2px 5px;
 }
 
 button:hover {
@@ -40,6 +41,7 @@ button:hover {
 .conteinerEqp1, .conteinerEqp2 {
     padding: 2rem 4rem;
     border-radius: 1rem;
+    box-shadow: #000000 3px 3px 8px;
 }
 
 .conteinerEqp1 {
