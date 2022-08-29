@@ -17,37 +17,47 @@ button {
     font-size: 1rem;
     border: none;
     background-color: #ADF5FF;
-    border-radius: 0.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
     padding: 0.5rem 1rem;
     font-weight: 700;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #99dae2;
+}
+
 .conteiner {
     display: grid;
-    grid-template-columns: 1fr;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr;
     width: max-content;
+    margin: 4rem;
+    gap: 2rem;
+}
+
+.conteinerEqp1, .conteinerEqp2 {
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+}
+
+.conteinerEqp1 {
+    background-color: #0075A2;    
+}
+
+.conteinerEqp2 {
+    background-color: #F3A712;
 }
 
 .equipe1, .equipe2 {
     display: grid;
-    justify-content: center;
     justify-items: center;
     gap: 1.2rem;
 }
 
-.conteinerEqp1 {
-    padding: 2rem 4rem;
-    background-color: #0075A2;
-}
-
-.conteinerEqp2 {
-    padding: 2rem 4rem;
-    background-color: #F3A712;
-}
-
 .pontos1, .pontos2 {
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 
@@ -65,10 +75,59 @@ button {
 
 .menos, .mais {
     grid-column: 1 / -1;
+    font-size: 1.5rem;    
 }
 
 .mais {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+}
+
+@media (max-width: 950px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        height: 3rem;
+        width: 3rem;
+        font-size: 0.9rem;
+    }
+
+    .conteiner {
+        grid-template-columns: 1fr;
+        margin: 0.5rem 0rem;
+        gap: 0.5rem;
+    }
+
+    .conteinerEqp1, .conteinerEqp2 {
+        padding: 0.6rem 2rem;
+    }
+
+    .equipe1, .equipe2 {
+        gap: 0.5rem;
+    }
+
+    .pontos1, .pontos2 {
+        font-size: 3rem;
+    }
+
+    .botoes1, .botoes2 {
+        gap: 0.5rem;
+    }
+
+    .menos, .mais {
+        font-size: 1.2rem;
+    }
+
+    .mais {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .conteinerEqp1, .conteinerEqp2 {
+        padding: 0.6rem 1rem;
+    }
 }
