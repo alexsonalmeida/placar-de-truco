@@ -16,12 +16,12 @@
                     0
                 </section>
                 <section class="botoes1">
-                    <button class="mais">+</button>
-                    <button class="scores">+3</button>
-                    <button class="scores">+6</button>
-                    <button class="scores">+9</button>
-                    <button class="scores">+12</button>
-                    <button class="menos">-</button>                    
+                    <button class="mais" onclick="addPoints(1, true)">+</button>
+                    <button class="scores" onclick="addPoints(3, true)">+3</button>
+                    <button class="scores" onclick="addPoints(6, true)">+6</button>
+                    <button class="scores" onclick="addPoints(9, true)">+9</button>
+                    <button class="scores" onclick="addPoints(12, true)">+12</button>
+                    <button class="menos" onclick="takePoints(true)">-</button>                    
                 </section>
             </section>            
         </section>
@@ -32,16 +32,16 @@
                     0
                 </section>
                 <section class="botoes2">
-                    <button class="mais">+</button>
-                    <button class="scores">+3</button>
-                    <button class="scores">+6</button>
-                    <button class="scores">+9</button>
-                    <button class="scores">+12</button>
-                    <button class="menos">-</button>                    
+                    <button class="mais" onclick="addPoints(1, false)">+</button>
+                    <button class="scores" onclick="addPoints(3, false)">+3</button>
+                    <button class="scores" onclick="addPoints(6, false)">+6</button>
+                    <button class="scores" onclick="addPoints(9, false)">+9</button>
+                    <button class="scores" onclick="addPoints(12, false)">+12</button>
+                    <button class="menos" onclick="takePoints(false)">-</button>                    
                 </section>
             </section>            
         </section>
-
     </main>
+    <script src="./js/index.js"></script>
 </body>
 </html>
