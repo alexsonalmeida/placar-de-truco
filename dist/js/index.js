@@ -5,17 +5,13 @@ let ourScore = 0;
 let theirScore = 0;
 function takePoints(isUs) {
     if (isUs) {
-        if (ourScore === 0)
-            console.log("já está um placar vazio");
-        else {
+        if (ourScore !== 0) {
             ourScore--;
             ourMarker.innerHTML = ourScore.toString();
         }
     }
     else {
-        if (theirScore === 0)
-            console.log("já está um placar vazio");
-        else {
+        if (theirScore !== 0) {
             theirScore--;
             theirMarker.innerHTML = theirScore.toString();
         }
@@ -24,15 +20,17 @@ function takePoints(isUs) {
 function addPoints(points, isUs) {
     if (isUs) {
         ourScore += points;
-        if (ourScore >= 12)
-            console.log("vencemos");
+        if (ourScore >= 12) {
+            window.location.href = "./pages/winner.html?ourScore=us";
+        }
         else
             ourMarker.innerHTML = ourScore.toString();
     }
     else {
         theirScore += points;
-        if (theirScore >= 12)
-            console.log("eles venceram");
+        if (theirScore >= 12) {
+            window.location.href = "./pages/winner.html?ourScore=they";
+        }
         else
             theirMarker.innerHTML = theirScore.toString();
     }
