@@ -21,7 +21,7 @@ function addPoints(points, isUs) {
     if (isUs) {
         ourScore += points;
         if (ourScore >= 12) {
-            window.location.href = "./pages/winner.html?ourScore=us";
+            window.location.href = "./dist/pages/winner.html?ourScore=us";
         }
         else
             ourMarker.innerHTML = ourScore.toString();
@@ -29,7 +29,7 @@ function addPoints(points, isUs) {
     else {
         theirScore += points;
         if (theirScore >= 12) {
-            window.location.href = "./pages/winner.html?ourScore=they";
+            window.location.href = "./dist/pages/winner.html?ourScore=they";
         }
         else
             theirMarker.innerHTML = theirScore.toString();
