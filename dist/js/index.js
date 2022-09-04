@@ -3,7 +3,7 @@ const ourMarker = document.querySelector(".pontos1");
 const theirMarker = document.querySelector(".pontos2");
 let ourScore = 0;
 let theirScore = 0;
-function takePoints(isUs) {
+const takePoints = (isUs) => {
     if (isUs) {
         if (ourScore !== 0) {
             ourScore--;
@@ -16,8 +16,8 @@ function takePoints(isUs) {
             theirMarker.innerHTML = theirScore.toString();
         }
     }
-}
-function addPoints(points, isUs) {
+};
+const addPoints = (points, isUs) => {
     if (isUs) {
         ourScore += points;
         if (ourScore >= 12) {
@@ -34,4 +34,4 @@ function addPoints(points, isUs) {
         else
             theirMarker.innerHTML = theirScore.toString();
     }
-}
+};

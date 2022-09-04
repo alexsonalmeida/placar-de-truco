@@ -3,7 +3,7 @@ const theirMarker = document.querySelector(".pontos2") as HTMLBodyElement
 let ourScore = 0
 let theirScore = 0
 
-function takePoints(isUs: boolean) {
+const takePoints = (isUs: boolean) => {
     if (isUs) {
         if (ourScore !== 0) {
            ourScore-- 
@@ -17,7 +17,7 @@ function takePoints(isUs: boolean) {
     }
 }
 
-function addPoints(points: number, isUs: boolean) {
+const addPoints = (points: number, isUs: boolean) => {
     if (isUs) {
         ourScore += points
         if (ourScore >= 12) {
